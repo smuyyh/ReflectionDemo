@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.yuyh.reflection.annotation.Inject;
 import com.yuyh.reflection.annotation.InjectView;
@@ -26,6 +27,6 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.hello)
     public void tvHelloClick(View v){
-
+        Toast.makeText(this, "OnClick", Toast.LENGTH_LONG).show();
     }
 }
